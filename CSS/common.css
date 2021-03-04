@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Noto+Sans+KR&display=swap');
+
+* { margin: 0px; padding:0px; text-decoration: none;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+  background: rgb(0, 116, 131);
+}
+
+.main {
+  background-color: white;
+  width: calc( 80vw - 60px);
+  height: calc(80vh - 60px);
+  border-radius: 20px;
+  text-align: center;
+  padding: 30px;
+  transform: translate(-50%,-50%);
+  position: absolute;
+  top:50%; left:50%;
+}
+
+.head{
+  background-color: rgb(0, 70, 79);
+  color:white;
+  width: 80vw;
+  font-weight: bold;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 20px;
+  text-align: center;
+  transform: translate(-50%,-50%);
+  position: absolute;
+  bottom:20px; left:50%;
+}
+
+.alignment {
+  transform: translate(-50%,-50%);
+  position: relative;
+  top:50%; left:50%;
+}
