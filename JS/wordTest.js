@@ -20,6 +20,25 @@ blind.addEventListener('mouseup',() => {
   }
 })
 
+blind.addEventListener('touchstart',() => {
+  if(!blind.classList.contains('showAnswer')) {
+    blind.classList.add('showAnswer')
+
+  }
+})
+
+blind.addEventListener('touchend',() => {
+  if(blind.classList.contains('showAnswer')) {
+    blind.classList.remove('showAnswer')
+  }
+})
+
+blind.addEventListener('touchcancel',() => {
+  if(blind.classList.contains('showAnswer')) {
+    blind.classList.remove('showAnswer')
+  }
+})
+
 prevWord.addEventListener('click', () => {
 
 })
