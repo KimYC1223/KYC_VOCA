@@ -8,11 +8,12 @@ module.exports = function (app) {
       res.render(__dirname+'/HTML/index.html')
     })
     app.get('/data', (req,res) => {
-      let pw = req.query.pw
-      fs.readFile(__dirname+'/data.txt','utf8',(err,data) => {
-        if(data == pw) { res.write(`1`)}
-        else res.write(`0`)
-        res.end()
+      const csvFilePath=__dirname+'/DATA/EnglishKoreanWord'
+      const csv=require('csvtojson')
+      csv()
+      .fromFile(csvFilePath)
+      .then((jsonObj)=>{
+          console.log(jsonObj);
       })
     })
 
