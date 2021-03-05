@@ -1,0 +1,25 @@
+{
+  "name": "kyc_voca",
+  "version": "1.0.0",
+  "description": "KimYC English vocabulary\u001b[D\u001b[F ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KimYC1223/KYC_VOCA.git"
+  },
+  "author": "KimYC1223",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KimYC1223/KYC_VOCA/issues"
+  },
+  "homepage": "https://github.com/KimYC1223/KYC_VOCA#readme",
+  "dependencies": {
+    "csvtojson": "^2.0.10",
+    "express": "^4.17.1",
+    "http": "0.0.1-security",
+    "path": "^0.12.7"
+  }
+}
