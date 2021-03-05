@@ -2,14 +2,17 @@
 <html lang="ko" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=0.8, minimum-scale=0.8, maximum-scale=0.8, user-scalable=no">
     <link href="../CSS/common.css" rel="stylesheet" />
     <link href="../CSS/wordTest.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>KimYC Vocabulary</title>
   </head>
   <body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
-    <div class="head">MADE BY KYC / RECOMMENED FOR MOBILE</div>
+    <img src="../IMAGE/logo.png" class="logoImg">
+    <div class="head" id="headTitle">MADE BY KYC / RECOMMENED FOR MOBILE</div>
     <div class="main">
       <div class="alignment">
         <div class="progress">
@@ -46,7 +49,7 @@
 
         <div class="hr"> </div>
         <div class="buttons">
-          <div class="prevWord" id="prevWord"> 이전 단어 </div>
+          <div class="prevWord disable" id="prevWord"> 이전 단어 </div>
           <div class="nextWord" id="nextWord"> 다음 단어 </div>
         </div>
       </div>

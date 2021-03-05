@@ -5,6 +5,15 @@
     -ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none;
 }
 
+a:link { color:#005bb1;}
+a:visited { color:#005bb1;}
+a:hover { color:#005bb1; }
+a:active { color:#005bb1; }
+
+.logoImg{
+  display: none;
+}
+
 body {
   background: rgb(0, 116, 131);
 }
