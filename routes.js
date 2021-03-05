@@ -10,11 +10,17 @@ module.exports = function (app) {
     app.get('/data', (req,res) => {
       const csvFilePath=__dirname+'/DATA/EnglishKoreanWord'
       const csv=require('csvtojson')
-      csv()
-      .fromFile(csvFilePath)
-      .then((jsonObj)=>{
-          console.log(jsonObj);
-      })
+      try{
+        csv()
+        .fromFile(csvFilePath)
+        .then((jsonObj)=>{
+            res.write(jsonObj);
+        })
+      } catch(error) {
+        console.log(error)
+        res.write(`0`)
+      }
+      res.end()
     })
 
     app.get('/wordTest', (req,res) => {
